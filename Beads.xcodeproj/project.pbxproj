@@ -11,6 +11,11 @@
 		A64E9B542C8CBC0500526151 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E9B532C8CBC0500526151 /* ContentView.swift */; };
 		A64E9B562C8CBC0600526151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64E9B552C8CBC0600526151 /* Assets.xcassets */; };
 		A64E9B592C8CBC0600526151 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64E9B582C8CBC0600526151 /* Preview Assets.xcassets */; };
+		A64E9B692C8CBD0300526151 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E9B682C8CBD0300526151 /* LoginView.swift */; };
+		A64E9B6C2C8CC03900526151 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E9B6B2C8CC03900526151 /* RegistrationView.swift */; };
+		A64E9B6F2C8CC26C00526151 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E9B6E2C8CC26C00526151 /* LoginViewModel.swift */; };
+		A64E9B712C8CC27900526151 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E9B702C8CC27900526151 /* RegistrationViewModel.swift */; };
+		A64E9B742C8CC2B900526151 /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E9B732C8CC2B900526151 /* ThreadsTextFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		A64E9B532C8CBC0500526151 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A64E9B552C8CBC0600526151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A64E9B582C8CBC0600526151 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A64E9B682C8CBD0300526151 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A64E9B6B2C8CC03900526151 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		A64E9B6E2C8CC26C00526151 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A64E9B702C8CC27900526151 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		A64E9B732C8CC2B900526151 /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,12 @@
 		A64E9B502C8CBC0500526151 /* Beads */ = {
 			isa = PBXGroup;
 			children = (
-				A64E9B512C8CBC0500526151 /* BeadsApp.swift */,
-				A64E9B532C8CBC0500526151 /* ContentView.swift */,
+				A64E9B642C8CBCCC00526151 /* Model */,
+				A64E9B632C8CBCB100526151 /* Services */,
+				A64E9B622C8CBCAE00526151 /* Extensions */,
+				A64E9B612C8CBCAA00526151 /* Utils */,
+				A64E9B602C8CBCA700526151 /* Core */,
+				A64E9B5F2C8CBCA300526151 /* App */,
 				A64E9B552C8CBC0600526151 /* Assets.xcassets */,
 				A64E9B572C8CBC0600526151 /* Preview Content */,
 			);
@@ -65,6 +79,95 @@
 				A64E9B582C8CBC0600526151 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A64E9B5F2C8CBCA300526151 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A64E9B512C8CBC0500526151 /* BeadsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A64E9B602C8CBCA700526151 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A64E9B662C8CBCDE00526151 /* Authentication */,
+				A64E9B652C8CBCD900526151 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A64E9B612C8CBCAA00526151 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A64E9B722C8CC29400526151 /* ViewModifiers */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A64E9B622C8CBCAE00526151 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A64E9B632C8CBCB100526151 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A64E9B642C8CBCCC00526151 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A64E9B652C8CBCD900526151 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A64E9B532C8CBC0500526151 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		A64E9B662C8CBCDE00526151 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A64E9B6D2C8CC25A00526151 /* ViewModel */,
+				A64E9B672C8CBCFB00526151 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A64E9B672C8CBCFB00526151 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A64E9B682C8CBD0300526151 /* LoginView.swift */,
+				A64E9B6B2C8CC03900526151 /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A64E9B6D2C8CC25A00526151 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A64E9B6E2C8CC26C00526151 /* LoginViewModel.swift */,
+				A64E9B702C8CC27900526151 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A64E9B722C8CC29400526151 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				A64E9B732C8CC2B900526151 /* ThreadsTextFieldModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +240,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A64E9B692C8CBD0300526151 /* LoginView.swift in Sources */,
+				A64E9B712C8CC27900526151 /* RegistrationViewModel.swift in Sources */,
 				A64E9B542C8CBC0500526151 /* ContentView.swift in Sources */,
 				A64E9B522C8CBC0500526151 /* BeadsApp.swift in Sources */,
+				A64E9B6F2C8CC26C00526151 /* LoginViewModel.swift in Sources */,
+				A64E9B742C8CC2B900526151 /* ThreadsTextFieldModifier.swift in Sources */,
+				A64E9B6C2C8CC03900526151 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
