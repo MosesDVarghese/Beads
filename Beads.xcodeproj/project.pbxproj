@@ -104,6 +104,7 @@
 		A64E9B602C8CBCA700526151 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A64E9B8E2C91BD7600526151 /* Components */,
 				A64E9B822C91B5B100526151 /* ThreadCreation */,
 				A64E9B7B2C91B4ED00526151 /* Activity */,
 				A64E9B662C8CBCDE00526151 /* Authentication */,
@@ -274,6 +275,13 @@
 				A64E9B842C91B5DE00526151 /* CreateThreadView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A64E9B8E2C91BD7600526151 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
